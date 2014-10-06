@@ -58,7 +58,6 @@ _goenv_init() {
 }
 
 _goenv_switch() {
-    echo "_goenv_switch " $@
     if [[ -n "$1" && -d "$1" ]]; then
         if [ -n "$GOPATH" ]; then
             _goenv_reset $@
